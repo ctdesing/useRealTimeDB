@@ -1,5 +1,5 @@
 {
-  "name": "@ctdesing/usesimplestorage",
+  "name": "@ctdesing/useRealTimeDatabase",
   "version": "1.0.0",
   "description": "Use Firebase Simple storage as async function",
   "main": "index.js",

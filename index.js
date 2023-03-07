@@ -1,7 +1,7 @@
 import { initializeApp } from "@firebase/app";
 import { getDatabase, ref, onValue, set } from "@firebase/database";
 
-async function useSimpleStorage(databaseURL, path = "/") {
+async function useRealTimeDatabase(databaseURL, path = "/") {
   // TODO: Replace the following with your app's Firebase project configuration
   // See: https://firebase.google.com/docs/web/learn-more#config-object
   const firebaseConfig = {
@@ -39,4 +39,4 @@ function query(ref) {
   });
 }
 
-export default useSimpleStorage;
+export default useRealTimeDatabase;
