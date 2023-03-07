@@ -21,7 +21,7 @@ const firebaseConfig = {
   // ...
   // `databaseURL` can be found at your database main page, and `apiKey` can be found at your project settings general information
   databaseURL: <YOUR_DATABASE_URL>,
-  apiKey: <YOUR DATABASE API KEY>,
+  apiKey: <YOUR PROJECT API KEY>,
 };
 
 // Initialize Firebase
