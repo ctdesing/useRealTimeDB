@@ -12,7 +12,7 @@ import useRealTimeDB from "@ctdesing/userealtimedb"
 // Replace DATABASE_NAME with your db name and ID_TOKEN with id from the firebase authentication credential
 const url = "https://<DATABASE_NAME>.firebaseio.com?auth=<ID_TOKEN>"
 
-const [data, setData] = useRealTimeDB(url, '/')
+const [data, setData] = await useRealTimeDB(url, '/')
 
 console.log(data)
 
