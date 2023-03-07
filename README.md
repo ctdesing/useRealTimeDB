@@ -1,4 +1,4 @@
-# useRealTimeDB 1.0.0
+# useRealTimeDB 2.0.0
 
 Use Firebase Real Time Database as async hook-like function.
 
@@ -6,13 +6,45 @@ Latest Firebase SDK tested: March 02, 2023
 
 ## Getting Started
 
+- ## Install @firebase/auth @firebase/app
+
+```
+npm install @firebase/auth @firebase/app
+```
+
+- ## Initialize App
+
+```
+// TODO: Replace the following with your app's Firebase project configuration
+// See: https://firebase.google.com/docs/web/learn-more#config-object
+const firebaseConfig = {
+  // ...
+  // `databaseURL` and `apiKey` both can be found at your database main page
+  databaseURL: <YOUR_DATABASE_URL>,
+  apiKey: <YOUR DATABASE API KEY>,
+};
+
+// Initialize Firebase
+const app = initializeApp(firebaseConfig);
+
+```
+
+- ## Authenticate user or admin for server use
+
+```
+const auth = getAuth(app)
+// Example using EMAIL and PASSWORD strategy, use your prefered stragy below.
+await signInWithEmailAndPassword(auth, <EMAIL>, <PASSWORD>)
+```
+
+- ## Get data and Write data.
+
 ```
 import useRealTimeDB from "@ctdesing/userealtimedb"
 
-// Replace DATABASE_NAME with your db name and ID_TOKEN with id from the firebase authentication credential
-const url = "https://<DATABASE_NAME>.firebaseio.com?auth=<ID_TOKEN>"
+const path = '/' // data path in the database
 
-const [data, setData] = await useRealTimeDB(url, '/')
+const [data, setData] = await useRealTimeDB(app, path)
 
 console.log(data)
 
