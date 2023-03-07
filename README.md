@@ -7,7 +7,7 @@ Use Firebase Real Time Database as async hook-like function.
 ```
 import useRealTimeDatabase from "@ctdesing/useRealTimeDatabase"
 
-const url = "https://DATABASE_NAME.firebaseio.com"
+const url = "https://DATABASE_NAME.firebaseio.com?auth=<ID_TOKEN>""
 
 const [data, setData] = useRealTimeDatabase(url, '/')
 
