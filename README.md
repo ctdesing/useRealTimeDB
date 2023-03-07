@@ -4,15 +4,24 @@ Use Firebase Real Time Database as async hook-like function.
 
 Latest Firebase SDK tested: March 02, 2023
 
+<br>
+
 ## Getting Started
 
-- ## Install @firebase/auth @firebase/app
+### 1- Install packages
 
 ```
-npm install @firebase/auth @firebase/app
+npm install @firebase/auth @firebase/app @ctdesing/userealtimedb
+```
+### 2- Import packages
+```
+import useRealTimeDB from "@ctdesing/userealtimedb"
+import { initializeApp } from "@firebase/app"
+import { getAuth, signInWithEmailAndPassword } from "@firebase/auth"
+
 ```
 
-- ## Initialize App
+### 3- Initialize App
 
 ```
 // TODO: Replace the following with your app's Firebase project configuration
@@ -29,7 +38,7 @@ const app = initializeApp(firebaseConfig);
 
 ```
 
-- ## Authenticate user or admin for server use
+### 4- Authenticate user or admin for server use
 
 ```
 const auth = getAuth(app)
@@ -37,11 +46,9 @@ const auth = getAuth(app)
 await signInWithEmailAndPassword(auth, <EMAIL>, <PASSWORD>)
 ```
 
-- ## Get data and Write data.
+### 5- Get data and Write data.
 
 ```
-import useRealTimeDB from "@ctdesing/userealtimedb"
-
 // data path in the database
 const path = '/'
 
