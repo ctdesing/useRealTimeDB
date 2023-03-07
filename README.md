@@ -1,4 +1,4 @@
-# useRealTimeDatabase
+# useRealTimeDatabase 1.0.0
 
 Use Firebase Real Time Database as async hook-like function.
 
