@@ -42,7 +42,8 @@ await signInWithEmailAndPassword(auth, <EMAIL>, <PASSWORD>)
 ```
 import useRealTimeDB from "@ctdesing/userealtimedb"
 
-const path = '/' // data path in the database
+// data path in the database
+const path = '/'
 
 const [data, setData] = await useRealTimeDB(app, path)
 
