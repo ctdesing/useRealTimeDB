@@ -1,7 +1,14 @@
+/* useRealTimeDB 1.0.0
+ *
+ * Author: Miguel Arias
+ *
+ * License: MIT
+ */
+
 import { initializeApp } from "@firebase/app";
 import { getDatabase, ref, onValue, set } from "@firebase/database";
 
-async function useRealTimeDatabase(databaseURL, path = "/") {
+async function useRealTimeDB(databaseURL, path = "/") {
   // TODO: Replace the following with your app's Firebase project configuration
   // See: https://firebase.google.com/docs/web/learn-more#config-object
   const firebaseConfig = {
@@ -39,4 +46,4 @@ function query(ref) {
   });
 }
 
-export default useRealTimeDatabase;
+export default useRealTimeDB;

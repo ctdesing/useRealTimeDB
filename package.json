@@ -1,28 +1,28 @@
 {
-  "name": "@ctdesing/useRealTimeDatabase",
+  "name": "@ctdesing/userealtimedb",
   "version": "1.0.0",
-  "description": "Use Firebase Simple storage as async function",
+  "description": "Use Firebase Real Time database as async function",
   "main": "index.js",
   "scripts": {
     "test": "jest ."
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/ctdesing/useSimpleStorage.git"
+    "url": "git+https://github.com/ctdesing/useRealTimeDB.git"
   },
   "keywords": [
     "firebase",
-    "simple",
-    "storage",
+    "real time",
+    "database",
     "hook-like"
   ],
   "author": "Miguel Arias",
   "license": "MIT",
   "type": "module",
   "bugs": {
-    "url": "https://github.com/ctdesing/useSimpleStorage/issues"
+    "url": "https://github.com/ctdesing/useRealTimeDB/issues"
   },
-  "homepage": "https://github.com/ctdesing/useSimpleStorage#readme",
+  "homepage": "https://github.com/ctdesing/useRealTimeDB#readme",
   "dependencies": {
     "@firebase/app": "^0.9.4",
     "@firebase/database": "^0.14.4"
