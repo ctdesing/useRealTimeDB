@@ -1,0 +1,29 @@
+{
+  "name": "@ctdesing/usesimplestorage",
+  "version": "1.0.0",
+  "description": "Use Firebase Simple storage as async function",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest ."
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ctdesing/useSimpleStorage.git"
+  },
+  "keywords": [
+    "firebase",
+    "simple",
+    "storage",
+    "hook-like"
+  ],
+  "author": "Miguel Arias",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/ctdesing/useSimpleStorage/issues"
+  },
+  "homepage": "https://github.com/ctdesing/useSimpleStorage#readme",
+  "dependencies": {
+    "@firebase/app": "^0.9.4",
+    "@firebase/database": "^0.14.4"
+  }
+}
