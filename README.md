@@ -2,6 +2,8 @@
 
 Use Firebase Real Time Database as async hook-like function.
 
+Latest Firebase SDK tested: March 02, 2023
+
 ## Getting Started
 
 ```
