@@ -18,6 +18,7 @@
   ],
   "author": "Miguel Arias",
   "license": "MIT",
+  "type": "module",
   "bugs": {
     "url": "https://github.com/ctdesing/useSimpleStorage/issues"
   },
