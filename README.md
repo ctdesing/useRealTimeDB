@@ -19,7 +19,7 @@ npm install @firebase/auth @firebase/app
 // See: https://firebase.google.com/docs/web/learn-more#config-object
 const firebaseConfig = {
   // ...
-  // `databaseURL` and `apiKey` both can be found at your database main page
+  // `databaseURL` can be found at your database main page, and `apiKey` can be found at your project settings general information
   databaseURL: <YOUR_DATABASE_URL>,
   apiKey: <YOUR DATABASE API KEY>,
 };
