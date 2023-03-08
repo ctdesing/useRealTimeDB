@@ -1,8 +1,8 @@
-# useRealTimeDB 2.0.0
+# useRealTimeDB 2.0.1
 
 Use Firebase Real Time Database as async hook-like function.
 
-Latest Firebase SDK tested: March 02, 2023
+Latest Firebase JS SDK tested: 9.17.2 - March 02, 2023
 
 <br>
 
@@ -13,7 +13,9 @@ Latest Firebase SDK tested: March 02, 2023
 ```
 npm install @firebase/auth @firebase/app @ctdesing/userealtimedb
 ```
+
 ### 2- Import packages
+
 ```
 import useRealTimeDB from "@ctdesing/userealtimedb"
 import { initializeApp } from "@firebase/app"

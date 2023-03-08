@@ -1,6 +1,6 @@
 {
   "name": "@ctdesing/userealtimedb",
-  "version": "2.0.0",
+  "version": "2.0.1",
   "description": "Use Firebase Real Time database as async function",
   "main": "index.js",
   "scripts": {
@@ -24,7 +24,6 @@
   },
   "homepage": "https://github.com/ctdesing/useRealTimeDB#readme",
   "dependencies": {
-    "@firebase/app": "^0.9.4",
     "@firebase/database": "^0.14.4"
   }
 }

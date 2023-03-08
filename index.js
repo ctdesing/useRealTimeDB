@@ -1,4 +1,4 @@
-/* useRealTimeDB 1.0.0
+/* useRealTimeDB 2.0.1
  *
  * Author: Miguel Arias
  *
