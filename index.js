@@ -16,7 +16,7 @@ async function useRealTimeDB(app, path = "/") {
   const data = await query(Ref);
 
   const write = (changes) => {
-    set(Ref, { ...data, ...changes });
+    set(Ref, changes);
   };
 
   return [data, write];
