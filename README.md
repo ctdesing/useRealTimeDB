@@ -11,15 +11,16 @@ Latest Firebase JS SDK tested: 9.17.2 - March 02, 2023
 ### 1- Install packages
 
 ```
-npm install @firebase/auth @firebase/app @ctdesing/userealtimedb
+npm install firebase
 ```
 
 ### 2- Import packages
 
 ```
 import useRealTimeDB from "@ctdesing/userealtimedb"
-import { initializeApp } from "@firebase/app"
-import { getAuth, signInWithEmailAndPassword } from "@firebase/auth"
+import { initializeApp } from "firebase/app"
+import { getAuth, signInWithEmailAndPassword } from "firebase/auth"
+import { getDatabase } from "@firebase/database";
 
 ```
 
@@ -54,10 +55,11 @@ await signInWithEmailAndPassword(auth, <EMAIL>, <PASSWORD>)
 // data path in the database
 const path = '/'
 
-const [data, setData] = await useRealTimeDB(app, path)
+const db = getDatabase(app);
+
+const [data, setData] = await useRealTimeDB(db, path)
 
 console.log(data)
 
-// the set function persist data not replaced.
-setData({since: 0})
+setData({ key:value })
 ```

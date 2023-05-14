@@ -5,11 +5,10 @@
  * License: MIT
  */
 
-import { getDatabase, ref, onValue, set } from "@firebase/database";
+import { ref, onValue, set } from "@firebase/database";
 
-async function useRealTimeDB(app, path = "/") {
+async function useRealTimeDB(db, path = "/") {
   // Initialize Realtime Database and get a reference to the service
-  const db = getDatabase(app);
 
   const Ref = ref(db, path);
 
